@@ -22,12 +22,15 @@ if (operacao === "soma") {
   console.log("Operaçao nao indentificada");
 }
 
-
 // Localizar o nivel de bonus
-const salario = 8000;
+const salario = 5000;
 
-if ( salario > 11000){
-console.log(salario*0.03)
-} else if (salario < 10999 && salario > 7000){
-console.log(salario+ (salario * 0.05))
-}
+if (salario > 11000) {
+  console.log(salario + salario * 0.03);
+} else if (salario < 10999 && salario > 7000) {
+  console.log(salario + salario * 0.05);
+} else if (salario < 7000 && salario > 4000) {
+  console.log(salario + salario * 0.07);}
+  else{
+    console.log(salario+(salario*0.09))
+  }
